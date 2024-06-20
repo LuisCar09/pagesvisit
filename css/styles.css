@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.content {
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.content h1 {
+    font-size: 42px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #00ff00, #0000ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.content p {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.content #contadorVisitas{
+    color: black;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #00ff00, #0000ff);
+    transition: all 1s ease-in-out;
+    background-size: 600%;
+}
+
+button:hover {
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
